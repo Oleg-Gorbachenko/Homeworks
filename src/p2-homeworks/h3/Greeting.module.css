@@ -1,0 +1,47 @@
+.greeting {
+    display: flex;
+    align-items: flex-start;
+}
+
+.error {
+    color: red;
+    height: 21px;
+    margin-left: 10px;
+
+}
+
+.input {
+    margin: 10px;
+    border: 1px solid green;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.errorInput {
+    margin: 10px;
+    border: 1px solid red;
+    outline: none;
+}
+
+.button {
+    margin: 10px;
+    width: 60px;
+    outline: none;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+.button:hover {
+    margin: 10px;
+    width: 60px;
+    outline: none;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+
+.count {
+    margin: 10px;
+}

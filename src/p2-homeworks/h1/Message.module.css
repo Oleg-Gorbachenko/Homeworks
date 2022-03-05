@@ -1,0 +1,39 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+.content {
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: coral;
+}
+.angle {
+    height: 15px;
+    width: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px,coral 0);
+}
+
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+}

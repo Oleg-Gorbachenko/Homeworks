@@ -1,0 +1,40 @@
+.someClass {
+}
+
+.button {
+    margin-right: 5px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+.buttonActive{
+    margin-right: 5px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.button:hover {
+    margin-right: 5px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.highPriority {
+    color: red;
+}
+
+.lowPriority {
+    color: green;
+}
+
+.middlePriority {
+    color: yellow;
+}
+
+.affairWrapper {
+    display: flex;
+    width: 250px;
+    row-gap: 10px;
+    column-gap: 20px;
+
+}
