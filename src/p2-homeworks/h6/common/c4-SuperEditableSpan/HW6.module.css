@@ -1,0 +1,10 @@
+.pencil {
+    width: 20px;
+    padding-left: 5px;
+}
+
+.span {
+    /*margin-left: 10px;*/
+    border: #3498db 2px solid;
+    border-radius: 20px;
+}
