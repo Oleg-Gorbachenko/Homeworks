@@ -1,0 +1,22 @@
+.select {
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    color: dodgerblue;
+
+}
+
+.select:focus {
+    outline: none;
+    border: #3498db solid 2px;
+}
+
+.option {
+    color: blue;
+    background: lightskyblue;
+}
+
+.option:checked {
+    color: blue;
+    background: #3498db;
+}
