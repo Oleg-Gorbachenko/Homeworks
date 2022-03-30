@@ -1,5 +1,4 @@
-.someClass {
-}
+
 
 .button {
     margin-right: 5px;
@@ -33,8 +32,6 @@
 
 .affairWrapper {
     display: flex;
+    justify-content: space-between;
     width: 250px;
-    row-gap: 10px;
-    column-gap: 20px;
-
 }
