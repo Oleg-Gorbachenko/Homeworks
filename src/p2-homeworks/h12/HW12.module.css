@@ -1,23 +1,23 @@
-.dark {
-    background: dimgrey;
-}
-
 .dark-text {
     color: aliceblue;
-}
-
-.red {
-    background: lightcoral;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .red-text {
     color: aqua;
-}
-
-.some {
-    background: lightgreen;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .some-text {
     color: darkslateblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.myTheme-text {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
 }

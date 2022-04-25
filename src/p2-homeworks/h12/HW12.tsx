@@ -1,23 +1,35 @@
 import React from "react";
 import s from "./HW12.module.css";
-
-const themes = ['dark', 'red', 'some'];
+import {useDispatch, useSelector} from "react-redux";
+import {AppStoreType} from "../h10/bll/store";
+import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
+import {changeTheme} from "./bll/themeReducer";
 
 function HW12() {
-    const theme = 'some'; // useSelector
+    const theme = useSelector<AppStoreType, string>(state => state.theme.currentTheme)
+    const allThemes = useSelector<AppStoreType, Array<string>>(state => state.theme.themes)
+    const dispatch = useDispatch()
 
-    // useDispatch, onChangeCallback
+    const onChangeCallback = (value: string) => {
+        dispatch(changeTheme(value))
+    }
 
     return (
-        <div className={s[theme]}>
+        <div>
             <hr/>
             <span className={s[theme + '-text']}>
                 homeworks 12
             </span>
-
+            <hr/>
+            <div>
+                < SuperRadio name={'radio'}
+                             options={allThemes}
+                             value={theme}
+                             onChangeOption={onChangeCallback}
+                />
+            </div>
             {/*should work (должно работать)*/}
             {/*SuperSelect or SuperRadio*/}
-
             <hr/>
         </div>
     );
