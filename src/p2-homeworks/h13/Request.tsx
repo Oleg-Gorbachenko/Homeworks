@@ -5,16 +5,16 @@ import {AppStoreType} from "../h10/bll/store";
 
 
 export const Request = () => {
-    const [value, setValue] = useState('')
-    let currentText = useSelector<AppStoreType, string>(state => state.requestH13.text)
+    const [isChecked, setIsChecked] = useState(false)
+    let currentText = useSelector<AppStoreType, boolean>(state => state.requestH13.isChecked)
     let dispatch = useDispatch()
 
     const buttonHandler = () => {
-        dispatch(requestOnTheServer(value))
+        dispatch(requestOnTheServer(isChecked))
     }
 
     const checkboxHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setValue(e.currentTarget.value)
+        setIsChecked(e.currentTarget.checked)
     }
 
     return (
